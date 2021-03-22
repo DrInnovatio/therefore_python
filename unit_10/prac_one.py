@@ -67,55 +67,76 @@
 #
 # print(travel_log_2)
 
+#
+# travel_log = [
+#     {
+#         "country": "France",
+#         "visits": 12,
+#         "cities": ["Paris", "Lille", "Dijon"]
+#     },
+#     {
+#         "country": "Germany",
+#         "visits": 5,
+#         "cities": ["Berlin", "Hamburg", "Stuttgart"]
+#     },
+# ]
+#
+#
+# # 🚨 Do NOT change the code above
+#
+# # TODO: Write the function that will allow new countries
+# # to be added to the travel_log. 👇
+#
+#
+# def add_new_country(country_visited, times_visited, cities_visited):
+#     new_country = {}
+#
+#     new_country["country"] = country_visited
+#     new_country["visits"] = times_visited
+#     new_country["cities"] = cities_visited
+#     travel_log.append(new_country)
+#
+#
+# # 🚨 Do not change the code below
+#
+# add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+# add_new_country("Japan", 11, ["Tokyo", "Osaka", "Kyoto"])
+# print(travel_log)
+#
+# fruits = [{"name_of_the_fruits": "banana", "number_of_the_fruits": 45, "nutrition": ["vitamin a", "vitamin c"]}]
+#
+# print(fruits)
+#
+#
+# def add_new_fruits(name, number, nutrition):
+#     new_fruits = {}
+#     new_fruits["name_of_the_fruits"] = name
+#     new_fruits["number_of_the_fruits"] = number
+#     new_fruits["nutrition"] = nutrition
+#     fruits.append(new_fruits)
+#
+#
+# add_new_fruits("orange", 91, ["fat", "fuel", "carb"])
+#
+# print(fruits)
+#
+sports = [{"name": "soccer", "number": [23, 33, 44],  "players":["Messi", "Sonny", "Ronaldo", "Rooney"]}]
 
-travel_log = [
-    {
-        "country": "France",
-        "visits": 12,
-        "cities": ["Paris", "Lille", "Dijon"]
-    },
-    {
-        "country": "Germany",
-        "visits": 5,
-        "cities": ["Berlin", "Hamburg", "Stuttgart"]
-    },
-]
+
+def add_new_sports(name, number, players):
+
+    new_things = {}
+
+    new_things["name"] = name
+    new_things["number"] = number
+    new_things["players"] = players
+
+    sports.append(new_things)
 
 
-# 🚨 Do NOT change the code above
-
-# TODO: Write the function that will allow new countries
-# to be added to the travel_log. 👇
-
-
-def add_new_country(country_visited, times_visited, cities_visited):
-    new_country = {}
-
-    new_country["country"] = country_visited
-    new_country["visits"] = times_visited
-    new_country["cities"] = cities_visited
-    travel_log.append(new_country)
+add_new_sports("baseball", [90, 77, 99, 51, 45], ["Kim", "Johnson"])
+add_new_sports("Ski", [209, 122, 452, 990, 212], ["Lee", "Emily", "Wing"])
+add_new_sports("Football", [11, 22, 66, 77, 88], ["Karl", "Kane", "Lilly"])
 
 
-# 🚨 Do not change the code below
-
-add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
-add_new_country("Japan", 11, ["Tokyo", "Osaka", "Kyoto"])
-print(travel_log)
-
-fruits = [{"name_of_the_fruits": "banana", "number_of_the_fruits": 45, "nutrition": ["vitamin a", "vitamin c"]}]
-
-print(fruits)
-
-
-def add_new_fruits(name, number, nutrition):
-    new_fruits = {}
-    new_fruits["name_of_the_fruits"] = name
-    new_fruits["number_of_the_fruits"] = number
-    new_fruits["nutrition"] = nutrition
-    fruits.append(new_fruits)
-
-
-add_new_fruits("orange", 91, ["fat", "fuel", "carb"])
-
-print(fruits)
+print(sports)
