@@ -34,7 +34,7 @@
 # Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
 # 11 is the Ace.
 #cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-from hashlib import new
+
 import random
 from replit import clear
 
@@ -57,7 +57,7 @@ def calculate_score(cards):
 # Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace it with a 1. You might need to look up append() and remove().
     if 11 in cards and sum(cards) > 21:
         cards.remove(11)
-        cards.append
+        cards.append(1)
     return sum(cards)
 
 
@@ -95,15 +95,15 @@ def play_game():
         print(f"Your cards: {user_cards}, current score : {user_score}")
         print(f"Computer's first card : {computer_cards[0]}")
 
-    if user_score == 0 or computer_score == 0 or user_score > 21:
-        is_game_over = True
-    else:
-        user_should_deal = input(
-            "Type 'y' to get another card, type 'n' to pass : ")
-        if user_should_deal == 'y':
-            user_cards.append(deal_card())
-        else:
+        if user_score == 0 or computer_score == 0 or user_score > 21:
             is_game_over = True
+        else:
+            user_should_deal = input(
+                "Type 'y' to get another card, type 'n' to pass : ")
+            if user_should_deal == 'y':
+                user_cards.append(deal_card())
+            else:
+                is_game_over = True
 
             # Hint 6: Create a function called calculate_score() that takes a List of cards as input
             # and returns the score.
@@ -117,7 +117,7 @@ def play_game():
 
             # Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
     while computer_score != 0 and computer_score < 17:
-        computer_score.append(deal_card())
+        computer_cards.append(deal_card())
         computer_score = calculate_score(computer_cards)
     print(f"Your final hand : {user_score}, final_score : {user_score}")
     print(
