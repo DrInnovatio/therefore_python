@@ -41,3 +41,7 @@ print(f"enemies outside function : {enemies}")
 #         new_enemy = enemies[0]
 
 #     print(new_enemy)
+
+# Global Constants
+
+PI = 3.14159
