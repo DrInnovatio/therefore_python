@@ -4,6 +4,7 @@ enemies = 1
 
 
 def increase_enemies():
+    global enemies
     enemies = 2
     print(f"enemies inside function : {enemies}")
 
@@ -11,32 +12,32 @@ def increase_enemies():
 increase_enemies()
 print(f"enemies outside function : {enemies}")
 
-player_health = 10
+
+# player_health = 10
 
 
-def game():
+# def game():
 
-    def drink_potion():
-        potion_strength = 2
-        print(player_health)
+#     def drink_potion():
+#         potion_strength = 2
+#         print(player_health)
 
-    drink_potion()
-
-
-print(player_health)
+#     drink_potion()
 
 
-#   There is no block scope in python.
-
-game_level = 3
+# print(player_health)
 
 
-def create_enemy():
+# #   There is no block scope in python.
 
-    enemies = ["Skeleton", " Zombie", "Alien"]
+# game_level = 3
 
-    if game_level < 5:
-        new_enemy = enemies[0]
 
-    print(new_enemy)
+# def create_enemy():
 
+#     enemies = ["Skeleton", " Zombie", "Alien"]
+
+#     if game_level < 5:
+#         new_enemy = enemies[0]
+
+#     print(new_enemy)
