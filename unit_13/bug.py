@@ -28,6 +28,7 @@
 # print(total_words)
 
 # Use debugger http://pythontutor.com/
+
 def mutate(a_list):
     b_list = []
     for item in a_list:
@@ -37,3 +38,8 @@ def mutate(a_list):
 
 
 mutate([1, 2, 3, 5, 8, 13])
+
+# Tips for Debugging
+# 1. Take a break.
+# 2. Ask a friend.
+# 3. Run often.
