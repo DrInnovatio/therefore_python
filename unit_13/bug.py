@@ -29,17 +29,18 @@
 
 # Use debugger http://pythontutor.com/
 
-def mutate(a_list):
-    b_list = []
-    for item in a_list:
-        new_item = item * 2
-        b_list.append(new_item)
-    print(b_list)
+# def mutate(a_list):
+#     b_list = []
+#     for item in a_list:
+#         new_item = item * 2
+#         b_list.append(new_item)
+#     print(b_list)
 
 
-mutate([1, 2, 3, 5, 8, 13])
+# mutate([1, 2, 3, 5, 8, 13])
 
 # Tips for Debugging
 # 1. Take a break.
 # 2. Ask a friend.
 # 3. Run often.
+
