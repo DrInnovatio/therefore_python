@@ -305,3 +305,5 @@ def selection_sort(arr):
         arr[minimum], arr[i] = arr[i], arr[minimum]
 
     return arr
+
+# https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889
