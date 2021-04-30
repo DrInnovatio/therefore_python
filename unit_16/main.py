@@ -1,5 +1,8 @@
 import another_module
-import turtle
+from turtle import Turtle
 
 print(another_module.another_variable)
 print(another_module)
+
+timmy = Turtle()
+print(timmy)
