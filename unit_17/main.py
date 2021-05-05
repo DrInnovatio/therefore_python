@@ -1,9 +1,13 @@
-class User():
-    pass
+class User:
+    def __init__(self, user_id, username):
+        self.id = user_id
+        self.username = username
 
-user_1 = User()
-user_1.id = "001"
-user_1.username = "angela"
 
-print(user_1.username)
-print(user_1)
+user_1 = User("0012", "Brandon")
+
+
+print(user_1.id)
+
+
+
