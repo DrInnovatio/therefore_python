@@ -15,10 +15,13 @@ def random_color():
 
 tim.speed("fastest")
 tim.shape("turtle")
-for _ in range(100):
-    tim.color(random_color())
-    tim.circle(100)
-    tim.setheading(tim.heading() + 10)
+
+
+def draw_spirograph(size_of_gap):
+    for _ in range(360):
+        tim.color(random_color())
+        tim.circle(100)
+        tim.setheading(tim.heading() + 10)
 
 
 screen = t.Screen()
