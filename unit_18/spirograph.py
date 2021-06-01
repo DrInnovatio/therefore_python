@@ -16,5 +16,7 @@ def random_color():
 tim.speed("fastest")
 tim.circle(100)
 
+screen = t.Screen()
+screen.exitonclick()
 
 # t.done()
