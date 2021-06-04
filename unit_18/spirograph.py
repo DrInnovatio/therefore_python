@@ -15,10 +15,11 @@ def random_color():
 
 tim.speed("fastest")
 tim.shape("turtle")
-tim.color(random_color())
-tim.circle(100)
-tim.setheading(tim.heading() + 10)
-tim.circle(100)
+for _ in range(100):
+    tim.color(random_color())
+    tim.circle(100)
+    tim.setheading(tim.heading() + 10)
+
 
 screen = t.Screen()
 screen.exitonclick()
