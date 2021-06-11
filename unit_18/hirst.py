@@ -11,9 +11,13 @@ color_list = [(253, 253, 249), (251, 244, 248), (247, 252, 250), (236, 246, 250)
               (79, 13, 63), (12, 55, 34), (236, 228, 6), (29, 164, 207), (15, 42, 132), (58, 165, 95), (135, 213, 228),
               (9, 102, 63), (134, 36, 21), (93, 29, 12), (156, 211, 190)]
 
+tim.setheading(225)
+tim.forward(300)
+tim.setheading(0)
 
-tim.dot(20, random.choice(color_list))
-tim.forward(50)
+for _ in range(10):
+    tim.dot(20, random.choice(color_list))
+    tim.forward(50)
 
 
 
