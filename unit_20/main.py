@@ -16,6 +16,10 @@ for position in starting_position:
     new_segment.goto(position)
     segments.append(new_segment)
     
+game_is_on = True
 
+while game_is_on:
+    for seg in segments:
+        seg.forward(20)
 
 screen.exitonclick()
