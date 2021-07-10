@@ -28,12 +28,25 @@ def sales(price, product):
 sales(1354, "TV")
 sales(318, "Nintendo")
 
+
 def my_pet(name, breed="Mal"):
     print(f"My dog {name} is a big {breed}")
 
+
 my_pet("Sparky")
+
 
 def make_shirt(size, message):
     print(f"Your size is {size} and {message} will be printed on the front of it.")
 
+
 make_shirt("L", "Pythonists")
+
+
+def got_formatted_name(first_name, last_name):
+    full_name = first_name + " " + last_name
+    return full_name.title()
+
+
+musician = got_formatted_name("John", "Lennon")
+print(musician)
