@@ -50,3 +50,11 @@ def got_formatted_name(first_name, last_name):
 
 musician = got_formatted_name("John", "Lennon")
 print(musician)
+
+
+def create_people(first_name, last_name):
+    person = {'first': first_name, 'last': last_name}
+    return person
+
+
+actor = create_people("John", "Dixie")
