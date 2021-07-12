@@ -67,3 +67,15 @@ def my_function(*kids):
 
 
 my_function("Emil", "Tobias", "Linus")
+
+
+def triangle(*side):
+    total_area = (side[0] * side[1]) * 0.5
+    return total_area
+
+
+result_1 = triangle(12, 22)
+result_2 = triangle(9, 23)
+
+print(f"{result_1} and {result_2}")
+
