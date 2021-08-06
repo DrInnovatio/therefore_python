@@ -27,8 +27,14 @@ while game_is_on:
 
     # Detect collision with wall.
 
-    if ball.ycor() > 280 or ball.ycor() < -300:
+    if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bounce()
+
+    # Detect collision with the paddles.
+
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
+        print("Made Contact")
+
 
 screen.exitonclick()
 
