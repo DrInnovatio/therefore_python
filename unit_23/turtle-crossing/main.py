@@ -21,6 +21,7 @@ while game_is_on:
 
     car_manager.create_car()
     car_manager.move_cars()
+    scoreboard = Scoreboard()
 
     # Detect collision with cars.
 
