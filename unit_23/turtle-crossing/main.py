@@ -35,6 +35,4 @@ while game_is_on:
         car_manager.level_up()
 
 
-
-
 screen.exitonclick()
