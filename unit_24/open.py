@@ -6,4 +6,4 @@
 #     file.write("New Text.")
 
 with open("my_file.txt", mode="w") as file:
-    file.write("New Text.")
+    file.write("\nNew Text.")
