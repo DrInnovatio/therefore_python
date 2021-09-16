@@ -22,3 +22,6 @@ data = pandas.read_csv("weather_data.csv")
 
 data_dic = data.to_dict()
 print(data_dic)
+
+temp_list = data["temp"].to_list()
+print(temp_list)
