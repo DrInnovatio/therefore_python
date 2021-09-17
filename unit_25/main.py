@@ -25,3 +25,5 @@ print(data_dic)
 
 temp_list = data["temp"].to_list()
 print(temp_list)
+
+print(data["temp"].mean())
