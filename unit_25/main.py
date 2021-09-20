@@ -34,5 +34,12 @@ print(data["temp"].max())
 print(data["condition"])
 print(data.condition)
 
-# Get data in row.
+print("# Get data in row.")
 print(data[data.day == "Monday"])
+print(data[data.temp == data.temp.max()])
+
+
+print("(0°C × 9/5) + 32 = 32°F")
+monday = data[data.day == "Monday"]
+feh = int(monday.temp) * (9 / 5) + 32
+print(feh)
