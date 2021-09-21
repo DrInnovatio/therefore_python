@@ -43,3 +43,12 @@ print("(0°C × 9/5) + 32 = 32°F")
 monday = data[data.day == "Monday"]
 feh = int(monday.temp) * (9 / 5) + 32
 print(feh)
+
+
+data_dictionary = {
+    "student": ["Amy", "John", "Matt"],
+    "scores": [76, 56, 65]
+}
+
+data_sec = pandas.DataFrame(data_dictionary)
+data_sec.to_csv("newnew.csv")
