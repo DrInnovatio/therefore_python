@@ -18,3 +18,7 @@ print(short_names)
 
 long_names = [name.upper() for name in names if len(name) > 5]
 print(long_names)
+
+number_a = [1,1,2,3,5,8,13,21,34,55]
+squared_numbers = [num * num for num in number_a]
+print(squared_numbers)
